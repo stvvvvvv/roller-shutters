@@ -1,0 +1,98 @@
+.first-screen {
+    box-shadow: 0px 30px 30px 10px rgba(69, 69, 69, 0.4);
+    background-image: url('../img/firstScreenBg.jpg'); 
+	&__container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10vw;
+        padding: 10vh 0;
+    }
+	&__note { 
+        color: $primary-white;
+    }
+    &__header{
+        font-size: 3.8rem;
+    }
+	&__subheader {
+        font-size: 2.4rem;
+     }
+	&__form {
+        max-width: 500px;
+        padding: 2rem;
+        background-color: rgba(243, 243, 243, 0.5);
+        border-radius: 1rem;
+        h2{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            label{
+                margin-top: 1rem;
+            }
+            input{
+                width: 250px;
+                height: 3rem;
+            }
+            .form__button{
+                width: 100px;
+                height: 40px;
+                margin-top: 2rem;
+                box-shadow: 4px 5px 35px -7px #ffa600;
+                background-color: #ffa600;
+                border-radius: 20px;
+                color: #ffffff;
+                font-family: Arial;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #ffaa00;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: #ffc766;
+                }
+            }
+        }
+     }
+}
+
+@media (max-width: 992px) {
+    .first-screen{
+        max-height: 64rem;
+        &__container{
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin: 0 2.5rem;
+        }
+        &__header{
+            font-size: 3.2rem;
+        }
+        &__note{
+            text-align: right;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .first-screen{
+        max-height: auto;
+        
+        &__header{
+            font-size: 2.4rem;
+        }
+        &__container{
+            justify-content: center;
+            padding: 5vh 0;
+        }
+        &__note{
+            text-align: center;
+        }
+    }
+}

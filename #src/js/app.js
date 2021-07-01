@@ -1,0 +1,2 @@
+@@include('files/script.js', {})
+

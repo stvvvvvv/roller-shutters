@@ -1,0 +1,11 @@
+$primary-white: rgb(242, 243, 244);
+$main-black: rgb(33, 37, 31);
+$primary-blue: rgb(7, 64, 120);
+$primary-orange: rgb(255, 165, 0);
+$primary-gray: rgb(243, 243, 243);
+
+@mixin centre{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
