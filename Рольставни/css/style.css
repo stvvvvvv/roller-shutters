@@ -246,7 +246,7 @@ h1 {
           box-shadow: 0px 0px 25px 15px rgba(15, 24, 31, 0.3);
 }
 
-.our-work__img img {
+.our-work__img_container img {
   max-width: 300px;
   max-height: auto;
   -webkit-transition: all 0.3s 0s ease;
