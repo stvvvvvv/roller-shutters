@@ -40,15 +40,6 @@ let validateForms = function(selector, rules) {
 validateForms('.form', {name: {required: true}, tel: {required: true} }, '.thanks-popup', 'send goal');
 
 
-
-//Слайдер
-var imgs = Array.from(document.getElementsByClassName('our-work__img'))				//Массив ячеек
-
-imgs.forEach((item, index) => {
-			item.onclick = () => imgs[index].classList.toggle('x')		
-})
-
-
 //Аккардеон
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -64,3 +55,21 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+//Прокрутка вверх страницы
+var btnToTop = document.querySelector('.btnToTop')
+var header = document.querySelector('.header')
+// var offsetTop = 
+
+function scrollToTop(element) {
+	window.scroll({
+		left: 0,
+		top: element.offsetTop,
+		behavior: 'smooth'
+	})
+}
+
+btnToTop.addEventListener('click', () => {
+	scrollToTop(header)
+})
+

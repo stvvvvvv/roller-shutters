@@ -39,7 +39,7 @@
 
 @media (max-width: 767px) {
     .roller-shutters{
-        justify-content: center;
+       display: none;
         &__container{
             flex-direction: column;
             max-width: 100px;

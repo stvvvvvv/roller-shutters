@@ -1,4 +1,8 @@
 .advantages{
+    background-color: $primary-gray;
+    margin: 2rem;
+    border-radius: 2rem;
+    padding-bottom: 4rem;
     &__container{
         display: flex;
         justify-content: space-between;
@@ -33,3 +37,4 @@
         }
     }
 }
+
