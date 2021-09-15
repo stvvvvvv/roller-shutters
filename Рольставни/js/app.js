@@ -56,11 +56,12 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//Прокрутка вверх страницы
+//Прокрутка вверх страницы при достижение секции FAQ
 var btnToTop = document.querySelector('.btnToTop')
 var header = document.querySelector('.header')
-// var offsetTop = 
+var faq = document.querySelector('.faq')
 
+//Функция прокрутки 
 function scrollToTop(element) {
 	window.scroll({
 		left: 0,
@@ -69,6 +70,22 @@ function scrollToTop(element) {
 	})
 }
 
+//Проверка пересечения с секцией FAQ
+const observer = new IntersectionObserver((enteries) => {
+	enteries.forEach(
+		entery => {
+			if (entery.isIntersecting) {
+				btnToTop.classList.toggle('active-btn');
+			} else {
+				btnToTop.classList.remove('active-btn');
+			}
+		}
+	)
+}, { threshold: 0})
+
+observer.observe((faq))
+
+//Выполнение фукнция прорутки при клике
 btnToTop.addEventListener('click', () => {
 	scrollToTop(header)
 })

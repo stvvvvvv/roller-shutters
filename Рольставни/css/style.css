@@ -450,11 +450,49 @@ h1 {
   cursor: pointer;
   outline: none;
   border: none;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
   z-index: 100;
 }
 
 .btnToTop .icon {
   font-size: 3rem;
+  font-weight: bold;
+}
+
+.active-btn {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@-webkit-keyframes spin {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+}
+
+@keyframes spin {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
 }
 
 html {
