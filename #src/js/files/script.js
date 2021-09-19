@@ -81,7 +81,7 @@ const observer = new IntersectionObserver((enteries) => {
 			}
 		}
 	)
-}, { threshold: 0})
+}, { threshold: 0.7})
 
 observer.observe((faq))
 
