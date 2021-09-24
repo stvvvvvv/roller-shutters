@@ -42,7 +42,7 @@ h1 {
 }
 
 ._no-webp .first-screen {
-  background-image: url("../img/firstScreenBg.jpg"); }
+  background-image: url(../../img/firstScreenBg.jpg); }
 
 .first-screen {
   -webkit-box-shadow: 0px 30px 30px 10px rgba(69, 69, 69, 0.4);
@@ -78,7 +78,7 @@ h1 {
 .first-screen__form {
   max-width: 500px;
   padding: 2rem;
-  background-color: rgba(243, 243, 243, 0.5);
+  background-color: rgba(243, 243, 243, 0.9);
   border-radius: 1rem;
 }
 
@@ -108,6 +108,10 @@ h1 {
 .first-screen__form form input {
   width: 250px;
   height: 3rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
 }
 
 .first-screen__form form .form__button {
@@ -679,4 +683,4 @@ h1 {
   }
 }
 
-._webp .first-screen { background-image: url(../img/firstScreenBg.webp); }
+._webp .first-screen { background-image: url(../../img/firstScreenBg.webp); }
