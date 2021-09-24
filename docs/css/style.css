@@ -42,11 +42,12 @@ h1 {
 }
 
 ._no-webp .first-screen {
-  background-image: url(../../img/firstScreenBg.jpg); }
+  background-image: url(../img/firstScreenBg.jpg); }
 
 .first-screen {
   -webkit-box-shadow: 0px 30px 30px 10px rgba(69, 69, 69, 0.4);
           box-shadow: 0px 30px 30px 10px rgba(69, 69, 69, 0.4);
+		background-image: url(../img/firstScreenBg.jpg);
 }
 
 .first-screen__container {
